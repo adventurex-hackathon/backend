@@ -2,10 +2,16 @@
   "files.associations": {
     "*.vpy": "python"
   },
-  "editor.tabSize": 2,
   "editor.formatOnSave": true,
-  "[javascript][javascriptreact][typescript][typescriptreact]": {
-    "editor.formatOnSave": true
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "latex-workshop.formatting.latex": "tex-fmt",
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  }
 }

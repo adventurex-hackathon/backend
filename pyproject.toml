@@ -13,3 +13,8 @@ dependencies = [
     "matplotlib>=3.9.4",
     "setuptools>=80.9.0",
 ]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.12.5",
+]
