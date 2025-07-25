@@ -19,4 +19,7 @@ subtitled_video.set_output()
 # rm .\manim\processing\temp.mp4
 # ffmpeg -i .\manim\processing\output_no_music.mp4 -i '.\manim\processing\music\Moonlight Magic - Asher Fulero.mp3' -filter_complex "[1:a]volume=0.1[music];[0:a][music]amix=inputs=2:duration=first[a]" -map 0:v -map "[a]" -c:v copy -c:a aac -shortest .\manim\processing\output.mp4
 # rm .\manim\processing\output_no_music.mp4
-# export output.mp4
+# export and send back output.mp4
+# clean up:
+# rm .\media -r -force
+# rm .\manim\processing\output.mp4
