@@ -40,7 +40,7 @@ class Demo(VoiceoverScene):
             )
             self.wait_until_bookmark("C")
             self.play(Write(blist[2]))
-        
+
         self.play(FadeOut(blist))
 
         s32s_text = Tex("Supercalifragilisticexpialidocious", font_size=72)
